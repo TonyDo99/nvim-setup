@@ -4,7 +4,7 @@ return {
   event = "InsertEnter", -- or "VeryLazy" for global lazy-load
   config = function()
     require("copilot").setup({
-      suggestion = { enabled = false },
+      suggestion = { enabled = true },
       panel = { enabled = false },
     })
   end,
