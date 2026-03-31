@@ -30,7 +30,8 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 vim.opt.mouse = "a"
-vim.opt.cursorline = false
+vim.opt.cursorline = true
+vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 
 vim.opt.foldcolumn = "1" -- '0' is not bad
