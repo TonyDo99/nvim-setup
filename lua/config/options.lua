@@ -45,6 +45,11 @@ vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
 
+-- Set to `false` to prevent "non-lsp snippets"" from appearing inside completion windows
+-- Motivation: Less clutter in completion windows and a more direct usage of snippets
+vim.g.lazyvim_mini_snippets_in_completion = true
+vim.g.lazyvim_eslint_auto_format = true
+
 vim.cmd([[
 nnoremap d "_d
 nnoremap D "_D
