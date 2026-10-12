@@ -29,7 +29,14 @@ return {
           },
           { icon = " ", key = "s", desc = "Restore Session", section = "session" },
           { icon = " ", key = "x", desc = "Lazy Extras", action = ":LazyExtras" },
-          { icon = " ", key = "i", desc = "Lazy Git", action = ":LazyGit" },
+          {
+            icon = " ",
+            key = "i",
+            desc = "Lazy Git",
+            action = function()
+              Snacks.lazygit()
+            end,
+          },
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
