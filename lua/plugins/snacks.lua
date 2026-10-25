@@ -18,7 +18,7 @@ return {
         ]],
         keys = {
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
-          { icon = " ", key = "-", desc = "File Explorer", action = ":Oil" },
+          { icon = " ", key = "e", desc = "File Explorer", action = ":Yazi" },
           { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
           { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
           {
@@ -42,6 +42,16 @@ return {
         },
       },
     },
+    image = { enabled = true },
     explorer = { enabled = true },
+    bigfile = { enabled = true },
+    indent = { enabled = true },
+    input = { enabled = true },
+    picker = { enabled = true },
+    quickfile = { enabled = true },
+    scope = { enabled = true },
+    scroll = { enabled = true },
+    statuscolumn = { enabled = true },
+    words = { enabled = true },
   },
 }
